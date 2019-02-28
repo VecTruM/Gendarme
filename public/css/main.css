@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+html, body {
+    margin           : 0;
+    padding          : 0;
+    background-color : white;
+}
+
+/*
+    HEADER
+ */
+header {
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-around;
+
+    background      : #1C1D21;
+    color           : white;
+    font-family     : 'Righteous', cursive;
+    position : relative;
+    z-index: 99;
+}
+
+
+/*
+    TEXT-LEFT HEADER
+ */
+.logo {
+    text-transform : uppercase;
+    display : flex;
+    align-items: center;
+}
+.logo p {
+    margin-left : 10px;
+}
+
+
+/*
+    NAVIGATION-MENU BAR
+ */
+nav ul#menu {
+    list-style-type : none;
+    margin          : 0;
+    padding         : 30px 2px;}
+nav ul#menu li {
+    display : inline-block;}
+nav ul#menu li a {
+    color              : white;
+    text-decoration    : none;
+    font-size          : 20px;
+    padding            : 25px 17.5px;
+    border-bottom      : 5px solid transparent;
+    -webkit-transition : all .2s ease-in;
+    -moz-transition    : all .2s ease-in;
+    -ms-transition     : all .2s ease-in;
+    -o-transition      : all .2s ease-in;
+    transition         : all .2s ease-in;}
+nav ul#menu li a:hover {
+    border-bottom      : 5px solid white;
+    -webkit-transition : all .3s ease-out;
+    -moz-transition    : all .3s ease-out;
+    -ms-transition     : all .3s ease-out;
+    -o-transition      : all .3s ease-out;
+    transition         : all .3s ease-out;
+
+}
+nav ul#menu li a.linked{
+    border-bottom: 5px solid white;}
+
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a.dropbtn:hover{
+    border-bottom      : 5px solid white;
+    -webkit-transition : all .3s ease-out;
+    -moz-transition    : all .3s ease-out;
+    -ms-transition     : all .3s ease-out;
+    -o-transition      : all .3s ease-out;
+    transition         : all .3s ease-out;
+    position: relative;
+    z-index: 99;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1C1D21;
+    min-width: 155px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.dropdown-content a {
+    color: #1C1D21;
+    padding            : 25px 17.5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*
+ CONTENT
+ */
+
+main{
+    background: url("../img/banner.png") no-repeat fixed center;
+    padding : 10% 0;
+    width  : 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+img {
+    width  : 100%;
+    height : 100%;
+}
+
+h2{
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+section#bienvenue {
+    position    : relative;
+    z-index     : 2;
+    max-width   : 60%;
+    color       : white;
+    background  : rgba(0, 0, 0, 0.2);
+    margin      : 2% auto;
+    padding     : 1% 25%;
+    text-align  : center;
+    font-family : 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+section#bienvenue p{
+    font-size: 20px;
+}
+
+footer{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #1C1D21;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 2%;
+}
+
+.center h3, .right h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.center p{
+    font-size: 35px;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+.right p{
+    padding: 0;
+    margin: 20px 0;
+}
+
+a.discord, a.facebook, a.youtube{
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+a.discord:hover, a.facebook:hover, a.youtube:hover{
+    transition: all .2s ease-in-out;
+}
+a.discord:hover{
+    color: rgba(114,137,218,0.96);
+}
+a.facebook:hover{
+    color:rgba(66,103,178,0.96);
+}
+a.youtube:hover{
+    color: rgba(255,0,0,0.96);
+}
+
+#list-part{
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+    align-items: center;
+
+    margin: auto;
+    max-width: 70%;
+    margin-bottom: 7.5%;
+}
+.card-1, .card-2{
+    position: relative;
+    margin: 0 15px;
+    color: white;
+    text-align : center;
+    padding: 1% 2%;
+    background: #1C1D21;
+    font-family: 'Righteous', cursive;
+    border-radius: 15px 0 15px 0;
+    width: 25%;
+    padding-bottom : 2.5%;
+}
+
+.card-1 h3, .card-2 h3{
+    font-size: 35px;
+}
+img.anthony, img.boom{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: .2s ease-out;
+}
+
+#list-part i{
+    font-size: 45px;
+}
+
+img.anthony:hover, img.boom:hover{
+    opacity: 0.5;
+    transition: .3s ease-in-out;
+    cursor : pointer;
+}
